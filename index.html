@@ -13,39 +13,66 @@
 
 <body>
 
-    <header class="header_back_img min-vh-100">
+    <header class="header_back_img min-vh-100 d-flex flex-column">
         <nav>
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between">
-                    <div>
+                    <div class="cursor">
                         <img src="./assets/images/png/title.png" alt="an eagle">
                     </div>
-                    <label class="menuicon">
-                        <span class="first_line"></span>
-                        <span class="second_line"></span>
-                        <span class="third_line"></span>
-                    </label>
-                    <div class="d-flex align-items-center gap_41px max_lg_view">
+                    <div class="d-flex align-items-center gap_41px max_lg_view pos-max-lg-rel">
+                        <div class="d-sm-none d-flex">
+                            <img src="./assets/images/png/title.png" alt="hawk image">
+                        </div>
+                        <div class="d-md-none d-flex pos_line_1"></div>
                         <a href="#home" class="fm fw-400 fs-16 lh-18 text-black nav_link">Home</a>
                         <a href="#about" class="fm fw-400 fs-16 lh-18 text-black nav_link">About</a>
                         <a href="#help" class="fm fw-400 fs-16 lh-18 text-black nav_link">We’ll help you</a>
                         <a href="#test" class="fm fw-400 fs-16 lh-18 text-black nav_link">Testimonials</a>
-                        <div class="d-lg-none d-flex">
+                        <div class="d-md-none d-flex">
                             <button
                                 class="fm fw-600 fs-16 lh-18 text-white btn_back_clr py_17px px_38px brdr_rad get_btn shadow">Get
                                 in
                                 Touch</button>
                         </div>
                     </div>
-                    <div class="d-lg-flex d-none">
+                    <div class="d-flex align-items-center gap-md-30px">
                         <button
-                            class="fm fw-600 fs-16 lh-18 text-white btn_back_clr py_17px px_38px brdr_rad get_btn shadow">Get
+                            class="fm fw-600 fs-16 lh-18 text-white btn_back_clr py_17px px_38px brdr_rad get_btn shadow d-md-flex d-none">Get
                             in
                             Touch</button>
+                        <label class="menuicon">
+                            <span class="first_line"></span>
+                            <span class="second_line"></span>
+                            <span class="third_line"></span>
+                        </label>
                     </div>
                 </div>
             </div>
         </nav>
+        <section class="d-flex flex-column flex-grow-1 align-items-center justify-content-center">
+            <div class="container d-flex align-items-center flex-column position-relative">
+                <div class="position-absolute ellipse_pos_center w-100 h-100">
+                    <img src="./assets/images/png/ellipse_hero.png" alt="red ellipse" class="w-100 h-100">
+                </div>
+                <span class="circle position-absolute">
+                    <img src="./assets/images/png/animation_circle.png" alt="circle with some linear gradient">
+                </span>
+                <p class="fm fw-600 fs-52 lh-62 max_w_lorem text-center position-relative z-3">Unlock Your Potential with a Professional CV
+                    Builder</p>
+                <p class="fm fw-400 fs-16 lh-24 opacity-75 text-black max_w_random_text text-center position-relative z-3">Our user-friendly
+                    platform guides you through the process, allowing you to customize every section to
+                    align with your
+                    unique career goals.</p>
+                <div class="d-flex align-items-center gap-3 flex-wrap justify-content-center position-relative z-3">
+                    <button
+                        class="fm fw-600 fs-16 lh-18 text-white btn_back_clr py_17px px_38px brdr_rad get_btn shadow">Get
+                        Started</button>
+                    <button class="fm fw-600 fs-16 lh-18 py_17px px_38px brdr_rad start_btn shadow">Watch
+                        Demo</button>
+                </div>
+            </div>
+        </section>
     </header>
 
     <main></main>
