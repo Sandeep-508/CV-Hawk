@@ -128,6 +128,22 @@
     padding-right: 12px;
 }
 
+.container_accordion {
+    max-width: 856px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.container_tools {
+    max-width: 1067px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 .container_security_trust {
     max-width: 1164px;
     margin-left: auto;
@@ -530,6 +546,45 @@ a {
     min-height: 50px;
 }
 
+.changed_color {
+    color: var(--primary-color);
+}
+
+.changes {
+    font-weight: var(--fw-600);
+}
+
+.max_w_text {
+    max-width: 525px;
+    min-height: 100px;
+}
+
+.max_text {
+    max-width: 556px;
+    min-height: 50px;
+}
+
+/* <----------------------------------------------------------- Accordion ----------------------------------------------------------------> */
+
+.brdr {
+    border-bottom: 1px solid var(--light-black-clr);
+}
+
+.disp_text {
+    display: none;
+    max-width: 786px;
+    min-height: 75px;
+}
+
+.accoridon_items {
+    max-width: 831px;
+    min-height: 28px;
+}
+
+.disp_change {
+    max-width: 856px !important;
+    min-height: 28px !important;
+}
 
 /* <----------------------------------------------------------- images or BackImages or backcolor ----------------------------------------------------------------> */
 
@@ -542,6 +597,17 @@ a {
 
 .back_clr {
     background: var(--theme-sec-color);
+}
+
+.sec_tool_clr {
+    background: var(--sec-back-clr);
+}
+
+.sec_back_img {
+    background-image: url(../images/png/tool_sec_background_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* <----------------------------------------------------------- spacing ----------------------------------------------------------------> */
@@ -570,6 +636,33 @@ a {
 
 .mt_35px {
     margin-top: 35px;
+}
+
+.py_80px {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.py_160px {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.pb_40px {
+    padding-bottom: 40px;
+}
+
+.py_100px {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.pt_130px {
+    padding-top: 130px;
+}
+
+.pb_160px {
+    padding-bottom: 160px;
 }
 
 /* <----------------------------------------------------------- Positions ----------------------------------------------------------------> */
