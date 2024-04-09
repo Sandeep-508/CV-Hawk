@@ -23,6 +23,8 @@
     --color-white: #FFFFFF;
     --black-color: #000000;
     --primary-color: rgba(243, 106, 62, 1);
+    --light-black-clr: rgba(0, 0, 0, 0.2);
+    --theme-sec-color: #FFFEFE;
     /* font-family */
     --fm-poppins: "Poppins", sans-serif;
     --fm-sans-racing: "Racing Sans One", sans-serif;
@@ -528,13 +530,17 @@ a {
 }
 
 
-/* <----------------------------------------------------------- images or BackImages ----------------------------------------------------------------> */
+/* <----------------------------------------------------------- images or BackImages or backcolor ----------------------------------------------------------------> */
 
 .header_back_img {
     background-image: url(../images/png/hero_sec.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.back_clr {
+    background: var(--theme-sec-color);
 }
 
 /* <----------------------------------------------------------- spacing ----------------------------------------------------------------> */
@@ -572,7 +578,13 @@ a {
 .circle {
     left: 30%;
     top: 10%;
-    /* transform: translate(-20%, -20%); */
+    animation: rotation 3s infinite;
+}
+
+.disc {
+    right: 57px;
+    top: 40%;
+    animation: rotation 3s infinite;
 }
 
 /* <----------------------------------------------------------- Hover ----------------------------------------------------------------> */
@@ -631,10 +643,69 @@ a {
 }
 
 /* <----------------------------------------------------------- Animations ----------------------------------------------------------------> */
+
 @keyframes navbar {
     to {
         background-position: 20vw;
     }
+}
+
+@keyframes rotation {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* <----------------------------------------------------------- Slick Slider ----------------------------------------------------------------> */
+
+.inside_slick_div {
+    width: 156px;
+    min-height: 141px;
+    padding: 27.5px 36px 35px 36px;
+    border-radius: 8px;
+    border: 1px;
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 30px 0px #0000000A;
+}
+
+.slick-dots li button {
+    display: none !important;
+}
+
+.slick-dots .slick-active {
+    background: var(--primary-color);
+    width: 23px;
+    height: 5px;
+    border-radius: 6px;
+}
+
+.slick-dots li {
+    background: var(--light-black-clr);
+    width: 16px;
+    height: 5px;
+    border-radius: 6px;
+}
+
+.slick-current div .slick-item div {
+    border: 1px solid var(--primary-color);
+}
+
+.slick-list {
+    padding: 10px;
+}
+
+.slick-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.slick-slide {
+    margin: 0 27px;
+}
+
+.slick-list {
+    margin: 0 -27px;
 }
 
 /* <----------------------------------------------------------- Media Queries ----------------------------------------------------------------> */
@@ -695,7 +766,7 @@ a {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        z-index: 3;
+        z-index: 5;
         transition: all 300ms linear;
     }
 
@@ -726,7 +797,91 @@ a {
 
     .circle {
         left: 30%;
-        top: -15%;
-        transform: translate(-20%, -20%);
+        top: -20%;
+    }
+}
+
+/* font sizes changes media query */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .pos_line_1 {
+        position: absolute;
+        width: 294px;
+        height: 2px;
+        background-color: var(--light-black-clr);
+        top: 42%;
+    }
+
+    .pos_line_2 {
+        position: absolute;
+        width: 294px;
+        height: 2px;
+        background-color: var(--light-black-clr);
+        top: 50%;
+    }
+
+    .pos_line_3 {
+        position: absolute;
+        width: 294px;
+        height: 2px;
+        background-color: var(--light-black-clr);
+        top: 58%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.9px) {
+    .pos_line_1 {
+        position: absolute;
+        width: 294px;
+        height: 2px;
+        background-color: var(--light-black-clr);
+        top: 35%;
+    }
+
+    .pos_line_2 {
+        position: absolute;
+        width: 294px;
+        height: 2px;
+        background-color: var(--light-black-clr);
+        top: 43%;
+    }
+
+    .pos_line_3 {
+        position: absolute;
+        width: 294px;
+        height: 2px;
+        background-color: var(--light-black-clr);
+        top: 52%;
+    }
+
+    .fs-lh-big-text {
+        font-size: var(--fs-40);
+        line-height: var(--lh-5);
+    }
+}
+
+@media (max-width: 575.9px) {
+    .pos_line_1 {
+        position: absolute;
+        width: 294px;
+        height: 2px;
+        background-color: var(--light-black-clr);
+        top: 43%;
+    }
+
+    .pos_line_2 {
+        position: absolute;
+        width: 294px;
+        height: 2px;
+        background-color: var(--light-black-clr);
+        top: 52%;
+    }
+
+    .pos_line_3 {
+        position: absolute;
+        width: 294px;
+        height: 2px;
+        background-color: var(--light-black-clr);
+        top: 61%;
     }
 }
