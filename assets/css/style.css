@@ -25,6 +25,7 @@
     --primary-color: rgba(243, 106, 62, 1);
     --light-black-clr: rgba(0, 0, 0, 0.2);
     --theme-sec-color: #FFFEFE;
+    --sec-back-clr: #f9f9f9;
     /* font-family */
     --fm-poppins: "Poppins", sans-serif;
     --fm-sans-racing: "Racing Sans One", sans-serif;
@@ -563,6 +564,14 @@ a {
     gap: 41px;
 }
 
+.mb_40px {
+    margin-bottom: 40px;
+}
+
+.mt_35px {
+    margin-top: 35px;
+}
+
 /* <----------------------------------------------------------- Positions ----------------------------------------------------------------> */
 
 .nav_link {
@@ -778,16 +787,9 @@ a {
         background: var(--primary-color);
     }
 
-    /* .pos-max-lg-rel {
-        position: relative;
+    .pb_114px {
+        padding-bottom: 114px;
     }
-
-    .pos_line_1{
-        position: absolute;
-        width: 100%;
-        height: 3px;
-
-    } */
 }
 
 @media (min-width: 768px) {
