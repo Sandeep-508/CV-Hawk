@@ -46,6 +46,10 @@ menuicon.addEventListener("click", () => {
 // accoridon
 
 let accordion_item = document.querySelectorAll(".accoridon_items");
+let svg_icon = document.querySelector(".svg_icon");
+let disp_text = document.querySelector(".disp_text");
+disp_text.style.display = "flex";
+svg_icon.style.transform = "rotate(180deg)";
 
 accordion_item.forEach(otherElement => {
     let svg_icon = otherElement.querySelector(".svg_icon");
@@ -58,18 +62,15 @@ accordion_item.forEach(otherElement => {
                 let disp_text = itm.querySelector(".disp_text");
                 disp_text.style.display = "none";
                 svg_icon.style.transform = "rotate(0deg)";
-                itm.classList.remove("disp_change");
             }
         });
         let text_prop = window.getComputedStyle(disp_text).display;
         if (text_prop === "none") {
             disp_text.style.display = "flex";
             svg_icon.style.transform = "rotate(180deg)";
-            otherElement.classList.add("disp_change");  
         } else {
             disp_text.style.display = "none";
             svg_icon.style.transform = "rotate(0deg)";
-            otherElement.classList.remove("disp_change");
         }
     });
 
