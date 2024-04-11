@@ -948,6 +948,10 @@ a {
     width: 100% !important;
 }
 
+.max_W_row {
+    max-width: 1032px;
+}
+
 /* <----------------------------------------------------------- Media Queries ----------------------------------------------------------------> */
 
 @media (max-width: 992px) {
@@ -1025,6 +1029,22 @@ a {
     .py_bet_sec {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+
+    .fs_lh_main_heading {
+        font-size: var(--fs-40);
+        font-weight: var(--fw-600);
+        line-height: var(--lh-54);
+    }
+
+    .fs_lh_sec_heading {
+        font-size: var(--fs-30);
+        line-height: var(--lh-39);
+    }
+
+    .fs_lh_accordion {
+        font-size: var(--fs-20);
+        line-height: var(--lh-28);
     }
 }
 
@@ -1131,11 +1151,6 @@ a {
         background-color: var(--light-black-clr);
         top: 58%;
     }
-
-    .fs_lh_sub {
-        font-size: var(--fs-36);
-        line-height: var(--lh-42);
-    }
 }
 
 @media (min-width: 576px) and (max-width: 767.9px) {
@@ -1165,12 +1180,6 @@ a {
 
     .fs-lh-big-text {
         font-size: var(--fs-40);
-    }
-
-    .fs_lh_sub {
-        font-size: var(--fs-30);
-        line-height: var(--lh-40);
-        min-height: 30px;
     }
 
     .pb_sm_max_sm_20px {
@@ -1220,6 +1229,11 @@ a {
     .mt_max_md_45px {
         margin-top: 45px;
     }
+
+    .fs_lh_sub {
+        font-size: var(--fs-30);
+        line-height: var(--lh-42);
+    }
 }
 
 @media (max-width: 575.9px) {
@@ -1257,8 +1271,8 @@ a {
     }
 
     .fs_lh_sub {
-        font-size: var(--fs-20);
-        line-height: var(--lh-30);
+        font-size: var(--fs-28);
+        line-height: var(--lh-36);
         min-height: 20px;
     }
 
@@ -1273,10 +1287,6 @@ a {
 
     .fs_lh_changes {
         font-size: var(--fs-14);
-    }
-
-    .fs_lh_changes_accordion {
-        font-size: var(--fs-20);
     }
 
     .floating_text::after {
@@ -1323,5 +1333,30 @@ a {
     .py_bet_sec {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    .fs_lh_main_heading {
+        font-size: var(--fs-32);
+        line-height: var(--lh-41);
+    }
+
+    .fs_lh_sec_heading {
+        font-size: var(--fs-28);
+        line-height: var(--lh-36);
+    }
+
+    .fs_lh_lorem {
+        font-size: var(--fs-14);
+        line-height: var(--lh-21);
+    }
+
+    .fs_lh_accordion {
+        font-size: var(--fs-16);
+        line-height: var(--lh-21);
+    }
+
+    .fs_lh_accordion_lorem {
+        font-size: var(--fs-14);
+        line-height: var(--lh-21);
     }
 }
