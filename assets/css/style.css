@@ -632,6 +632,13 @@ a {
     background-size: cover;
 }
 
+.resume_back_img {
+    background-image: url(../images/png/resume_back_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .back_clr {
     background: var(--theme-sec-color);
 }
@@ -1014,6 +1021,11 @@ a {
     .pb_114px {
         padding-bottom: 114px;
     }
+
+    .py_bet_sec {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1204,6 +1216,12 @@ a {
     }
 }
 
+@media (max-width: 768px) {
+    .mt_max_md_45px {
+        margin-top: 45px;
+    }
+}
+
 @media (max-width: 575.9px) {
     .pos_line_1 {
         position: absolute;
@@ -1300,5 +1318,10 @@ a {
         padding: 15px 18px 14px 18px;
         border-radius: 10px;
         box-shadow: 0px 18px 59px 0px rgba(0, 0, 0, 0.07);
+    }
+
+    .py_bet_sec {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
