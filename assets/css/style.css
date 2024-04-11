@@ -794,6 +794,36 @@ a {
     position: relative;
 }
 
+.ellipse_theme_pos_left {
+    top: -215px;
+    left: 0;
+}
+
+.ellipse_theme_pos_right {
+    bottom: 0;
+    right: 0;
+}
+
+.help_ellipse_left {
+    left: 0;
+    bottom: -155px;
+}
+
+.help_ellipse_right {
+    right: 0;
+    top: -185px;
+}
+
+.resume_ellipse {
+    right: 0;
+}
+
+.resume_center_ellipse {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* <----------------------------------------------------------- Hover ----------------------------------------------------------------> */
 
 .nav_link:hover {
