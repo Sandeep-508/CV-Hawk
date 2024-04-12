@@ -1221,6 +1221,13 @@ a {
     }
 }
 
+@media (max-width: 1200px) {
+    .fs_lh_sec_heading_lg {
+        font-size: var(--fs-30);
+        line-height: var(--lh-39);
+    }
+}
+
 @media (min-width: 768px) {
     .gap-md-30px {
         gap: 30px;
@@ -1527,6 +1534,11 @@ a {
     }
 
     .fs_lh_sec_heading {
+        font-size: var(--fs-28);
+        line-height: var(--lh-36);
+    }
+
+    .fs_lh_sec_heading_lg {
         font-size: var(--fs-28);
         line-height: var(--lh-36);
     }
