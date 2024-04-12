@@ -621,6 +621,10 @@ a {
     cursor: text;
 }
 
+.opacity-90 {
+    opacity: 90%;
+}
+
 /* <----------------------------------------------------------- Accordion ----------------------------------------------------------------> */
 
 .brdr {
@@ -844,6 +848,10 @@ a {
     transform: translate(-50%, -50%);
 }
 
+.bottom_line {
+    position: relative;
+}
+
 /* <----------------------------------------------------------- Hover ----------------------------------------------------------------> */
 
 .nav_link:hover {
@@ -981,6 +989,18 @@ a {
     min-height: 29px;
 }
 
+.bottom_line::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/png/line_bottom_text.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 11px;
+}
+
 /* <----------------------------------------------------------- Animations ----------------------------------------------------------------> */
 
 @keyframes navbar {
@@ -1069,6 +1089,35 @@ a {
 
 .max_W_row {
     max-width: 1032px;
+}
+
+/* hero slider */
+
+.hero_slider .slick-slide {
+    width: 320px !important;
+}
+
+.hero_slider .slick-list {
+    width: 320px !important;
+    height: 450px !important;
+}
+
+.hero_slider .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_slider .slick-dots {
+    bottom: 0;
+}
+
+.hero_slider .slick-slide {
+    margin: 10px;
+}
+
+.h_384px {
+    height: 405px;
 }
 
 /* <----------------------------------------------------------- Media Queries ----------------------------------------------------------------> */
@@ -1499,5 +1548,9 @@ a {
 
     .mt_max_sm_30px {
         margin-top: 30px;
+    }
+
+    .d_sm_max_none::after {
+        display: none !important;
     }
 }
