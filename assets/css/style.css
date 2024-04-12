@@ -28,6 +28,12 @@
     --sec-back-clr: #f9f9f9;
     --footer-clr: #070707;
     --slider-back-clr: F9F9F9;
+    --blue_color: #0000EE;
+    --white_footer_line: rgba(250, 250, 250, 0.2);
+    --lg-back-sec: linear-gradient(to bottom, #FFFFFF 50%, #070707 50%);
+    --nav_link: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(243, 106, 48, 1) 47%, rgba(252, 176, 69, 1) 100%);
+    --inside_slick_div: #0000000A;
+    --get_btn: #F36A3E;
     /* font-family */
     --fm-poppins: "Poppins", sans-serif;
     --fm-sans-racing: "Racing Sans One", sans-serif;
@@ -118,6 +124,7 @@
     --lh-96: 96px;
     --lh-100: 100px;
     --lh-188: 188px;
+
 }
 
 /* <----------------------------------------------------------- different containers ----------------------------------------------------------------> */
@@ -603,7 +610,15 @@ a {
 .white_footer_line {
     width: 100%;
     height: 2px;
-    background: rgba(250, 250, 250, 0.2);
+    background: var(--white_footer_line);
+}
+
+.anchor_text_clr {
+    color: var(--black-color);
+}
+
+.cursor_text {
+    cursor: text;
 }
 
 /* <----------------------------------------------------------- Accordion ----------------------------------------------------------------> */
@@ -663,7 +678,7 @@ a {
 }
 
 .lg_back_sec {
-    background: linear-gradient(to bottom, #FFFFFF 50%, #070707 50%);
+    background: var(--lg-back-sec);
 }
 
 .back_footer_clr {
@@ -766,6 +781,11 @@ a {
     margin-bottom: 80px;
 }
 
+.py_hero_sec {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
 /* <----------------------------------------------------------- Positions ----------------------------------------------------------------> */
 
 .nav_link {
@@ -842,7 +862,7 @@ a {
     background: var(--color-white);
     border: 1px solid var(--color-white);
     color: var(--primary-color) !important;
-    box-shadow: 0px 0px 15px 0px #F36A3E !important;
+    box-shadow: 0px 0px 15px 0px var(--get_btn) !important;
     transform: scale(1.05);
 }
 
@@ -851,12 +871,12 @@ a {
     background: var(--primary-color);
     border: 1px solid transparent;
     color: var(--color-white);
-    box-shadow: 0px 0px 15px 0px #F36A3E !important;
+    box-shadow: 0px 0px 15px 0px var(--get_btn) !important;
     transform: scale(1.05);
 }
 
 .nav_link:hover {
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(243, 106, 48, 1) 47%, rgba(252, 176, 69, 1) 100%);
+    background: var(--nav_link);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: transparent;
@@ -864,8 +884,77 @@ a {
     color: transparent;
 }
 
+.hover_effect_text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--blue_color);
+}
+
+.footer_link {
+    position: relative;
+    transition: all 300ms linear;
+}
+
+.footer_link:hover {
+    opacity: 1 !important;
+}
+
+.svg_hover_fac:hover {
+    animation: svg_face_anim 2s 1;
+}
+
+.svg_hover_fac:hover svg path {
+    transition: all 300ms linear;
+    stroke: var(--primary-color);
+}
+
+.svg_hover:hover {
+    transform: scale(1.1);
+    transition: all 300ms linear;
+}
+
+.svg_hover_inst:hover {
+    animation: svg_animation 2s 1;
+}
+
+.svg_hover_inst:hover {
+    animation: svg_animation 2s 1;
+}
+
+.svg_hover:hover svg path {
+    fill: var(--primary-color);
+}
+
+/* <----------------------------------------------------------- keyframe ----------------------------------------------------------------> */
+
+@keyframes svg_animation {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes svg_face_anim {
+    to {
+        transform: rotateX(360deg);
+    }
+}
 
 /* <----------------------------------------------------------- Before $ After ----------------------------------------------------------------> */
+.footer_link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    width: 0;
+    height: 2px;
+    transition: all 300ms linear;
+}
+
+.footer_link:hover::after {
+    width: 100%;
+}
 
 .nav_link::after {
     content: "";
@@ -910,12 +999,12 @@ a {
 
 .inside_slick_div {
     width: 156px;
-    min-height: 141px;
+    height: 141px;
     padding: 27.5px 36px 35px 36px;
     border-radius: 8px;
     border: 1px;
     background-color: var(--color-white);
-    box-shadow: 0px 4px 30px 0px #0000000A;
+    box-shadow: 0px 4px 30px 0px var(--inside_slick_div);
 }
 
 .slick-dots li button {
@@ -1061,6 +1150,11 @@ a {
         padding-bottom: 120px;
     }
 
+    .py_hero_sec {
+        padding-bottom: 120px;
+        padding-top: 0;
+    }
+
     .fs_lh_main_heading {
         font-size: var(--fs-40);
         font-weight: var(--fw-600);
@@ -1133,7 +1227,7 @@ a {
         border: 1px solid var(--primary-color);
         border-radius: 50%;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 0;
     }
 
@@ -1143,15 +1237,15 @@ a {
         border: 1px solid var(--primary-color);
         border-radius: 50%;
         position: absolute;
-        top: 50%;
+        top: 40%;
         right: 0;
     }
 }
 
 @media (max-width: 1024px) {
     .w_h_box {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 }
 
@@ -1190,6 +1284,10 @@ a {
         height: 2px;
         background-color: var(--light-black-clr);
         top: 35%;
+    }
+
+    .mt_max_sm_30px {
+        margin-top: 30px;
     }
 
     .pos_line_2 {
@@ -1275,6 +1373,10 @@ a {
         top: 43%;
     }
 
+    .text_wrap {
+        text-wrap: nowrap !important;
+    }
+
     .pos_line_2 {
         position: absolute;
         width: 294px;
@@ -1311,8 +1413,8 @@ a {
     }
 
     .w_h_box {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     .fs_lh_changes {
@@ -1330,6 +1432,11 @@ a {
         left: 75px;
         width: 36px;
         min-height: 29px;
+    }
+
+    .py_hero_sec {
+        padding-bottom: 100px;
+        padding-top: 0;
     }
 
     .prev {
@@ -1388,5 +1495,9 @@ a {
     .fs_lh_accordion_lorem {
         font-size: var(--fs-14);
         line-height: var(--lh-21);
+    }
+
+    .mt_max_sm_30px {
+        margin-top: 30px;
     }
 }
