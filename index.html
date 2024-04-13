@@ -26,9 +26,18 @@
 
 <body>
 
+    <!-- preloader -->
+
+    <section
+        class="position-fixed top-0 start-0 d-flex align-items-center justify-content-center preloader w-100 h-100">
+    </section>
+
     <!-- navbar -->
 
-    <header class="header_back_img min-vh-100 d-flex flex-column">
+    <header class="header_back_img min-vh-lg d-flex flex-column position-relative">
+        <span class="position-absolute bottom-0 start-50 d-sm-block d-none">
+            <img src="./assets/images/png/tablets_img.png" alt="tabalet img">
+        </span>
         <nav>
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between">
@@ -64,17 +73,31 @@
                 </div>
             </div>
         </nav>
-        <section class="d-flex flex-column flex-grow-1 align-items-center justify-content-center mt_max_sm_30px"
+        <section
+            class="d-flex flex-column flex-grow-1 align-items-center justify-content-center mt_max_sm_30px pad_hero position-relative"
             id="home">
+            <span class="first_image d-sm-block d-none">
+                <img src="./assets/images/png/hero_sec_left_0.png" alt="resume image">
+            </span>
+            <span class="second_image d-sm-block d-none">
+                <img src="./assets/images/png/hero_sec_left_bottom_0.png" alt="resume image">
+            </span>
+            <span class="third_image d-sm-block d-none">
+                <img src="./assets/images/png/hero_sec_top_right_0.png" alt="resume image">
+            </span>
+            <span class="forth_image d-sm-block d-none">
+                <img src="./assets/images/png/hero_sec_right_bottom_0.png" alt="resume image">
+            </span>
             <div class="container d-flex align-items-center flex-column position-relative">
                 <div class="position-absolute ellipse_pos_center w-100 h-100">
                     <img src="./assets/images/png/ellipse_hero.png" alt="red ellipse" class="w-100 h-100">
                 </div>
                 <span class="circle position-absolute">
-                    <img src="./assets/images/png/animation_circle.png" alt="circle with some linear gradient">
+                    <img src="./assets/images/png/animation_circle.png" alt="circle with some linear gradient"
+                        class="w-100 h-100">
                 </span>
                 <span class="disc position-absolute">
-                    <img src="./assets/images/png/animation_disc.png" alt="half disc">
+                    <img src="./assets/images/png/animation_disc.png" alt="half disc" class="w-100 h-100">
                 </span>
                 <p class="fm fw-600 fs-52 lh-62 max_w_lorem text-center position-relative z-3 m-0 fs_lh_main_heading">
                     Unlock
@@ -228,9 +251,10 @@
                 <div class="row">
                     <div class="col-md-6 d-flex align-items-start justify-content-center flex-column pb_40px">
                         <p class="fm fw-500 fs-40 lh-46 fs_lh_sec_heading">Powerful Tools to
-                            Create <span class="changed_color bottom_line d-none d-md-inline-grid">Your
-                                Standout CV</span><span class="changed_color d-md-none d-inline-grid">Your</span>
-                            <span class="changed_color bottom_line d_sm_max_none d-md-none d-inline-grid">Standout
+                            Create <span class="changed_color bottom_line d-none d-lg-inline-grid">Your
+                                Standout CV</span><span class="changed_color d-lg-none d-inline-grid">Your</span>
+                            <span class="changed_color bottom_line d-sm-inline-grid d-none d_none">Standout
+                                CV</span><span class="changed_color d-sm-none d-inline-grid">Standout
                                 CV</span>
                         </p>
                         <a href="#"
@@ -385,7 +409,8 @@
                     </div>
                     <div class="col-md-6 pt-5 pb_40px d-flex align-items-start justify-content-center flex-column">
                         <p class="fm fw-500 fs-40 lh-46 fs_lh_sec_heading_lg">Resume trailoring
-                            based on the <span class="changed_color bottom_line d-lg-inline-grid d-none">job
+                            based on the <span
+                                class="changed_color diff_bot_line position-relative d-lg-inline-grid d-none">job
                                 you’re applying</span><span class="changed_color d-lg-none d-inline-grid">job
                                 you’re applying</span> for</p>
                         <p class="fm fw-400 fs-16 lh-24 text-black opacity-75 max_text fs_lh_lorem">
@@ -451,7 +476,7 @@
                     <div class="container_hero d-flex align-items-center flex-column justify-content-center">
                         <div class="row max_W_row">
                             <div
-                                class="col-lg-4 mt-4 col-md-6 col-12 d-flex align-items-center justify-content-center flex-column">
+                                class="col-lg-4 mt-lg-4 col-md-6 col-12 d-flex align-items-center justify-content-center flex-column mt-0">
                                 <div class="floating_text">
                                     <p class="fm fw-400 fs-16 lh-24 text-black fs_lh_lorem">Sit urna ornare sed quam
                                         molestie sit
@@ -472,7 +497,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-6 d-md-block d-none">
+                            <div class="col-lg-4 col-6 d-md-block d-none mt-lg-0 mt_40px">
                                 <div class="floating_text">
                                     <p class="fm fw-400 fs-16 lh-24 text-black fs_lh_lorem">Sit urna ornare sed quam
                                         molestie sit

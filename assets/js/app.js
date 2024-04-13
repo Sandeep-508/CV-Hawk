@@ -120,3 +120,12 @@ $('.slider').slick({
         }
     ]
 });
+
+
+// preloader
+
+let preloader = document.querySelector(".preloader");
+preloader.classList.add("top_100");
+setTimeout(() => {
+    preloader.classList.add("-top_100");
+}, 3000);

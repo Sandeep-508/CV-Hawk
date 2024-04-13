@@ -250,7 +250,7 @@
 }
 
 .py_hero_sec {
-    /* padding-top: 160px; */
+    padding-top: 160px;
     padding-bottom: 160px;
 }
 
@@ -318,6 +318,30 @@
 
 .line_bottom {
     position: relative;
+}
+
+.first_image {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.second_image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.third_image {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.forth_image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 /* <----------------------------------------------------------- Hover ----------------------------------------------------------------> */
@@ -401,18 +425,19 @@
     fill: var(--primary-color);
 }
 
-/* <----------------------------------------------------------- keyframe ----------------------------------------------------------------> */
 
-@keyframes svg_animation {
-    to {
-        transform: rotate(360deg);
-    }
+/* <----------------------------------------------------------- preloader ----------------------------------------------------------------> */
+
+.preloader {
+    background-image: url(../images/png/complete_page_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+    transition: all 300ms linear;
 }
-
-@keyframes svg_face_anim {
-    to {
-        transform: rotateX(360deg);
-    }
+.-top_100 {
+    top: -100% !important;
 }
 
 /* <----------------------------------------------------------- Before $ After ----------------------------------------------------------------> */
@@ -469,7 +494,31 @@
     height: 11px;
 }
 
-/* <----------------------------------------------------------- Animations ----------------------------------------------------------------> */
+.diff_bot_line::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/png/job_line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 11px;
+}
+
+/* <----------------------------------------------------------- keyframe ----------------------------------------------------------------> */
+
+@keyframes svg_animation {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes svg_face_anim {
+    to {
+        transform: rotateX(360deg);
+    }
+}
 
 @keyframes navbar {
     to {

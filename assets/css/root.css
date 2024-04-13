@@ -617,7 +617,7 @@ a {
 
     .py_hero_sec {
         padding-bottom: 120px;
-        padding-top: 0;
+        padding-top: 120px;
     }
 
     .fs_lh_main_heading {
@@ -634,6 +634,21 @@ a {
     .fs_lh_accordion {
         font-size: var(--fs-20);
         line-height: var(--lh-28);
+    }
+
+    .circle {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media (min-width: 992px) {
+    .min-vh-lg {
+        min-height: 100vh;
+    }
+
+    .d_none {
+        display: none !important;
     }
 }
 
@@ -734,6 +749,11 @@ a {
         background: var(--light-black-clr);
         transform: translateX(-50%);
     }
+
+    .pad_hero {
+        padding-top: 102px;
+        padding-bottom: 155px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.9px) {
@@ -797,6 +817,11 @@ a {
         top: 100%;
         right: 40%;
     }
+
+    .pad_hero {
+        padding-top: 102px;
+        padding-bottom: 155px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -807,6 +832,20 @@ a {
     .fs_lh_sub {
         font-size: var(--fs-30);
         line-height: var(--lh-42);
+    }
+
+
+    .circle {
+        width: 36px;
+        height: 36px;
+        top: -10%;
+    }
+
+    .disc {
+        width: 52px;
+        height: 52px;
+        right: 20px;
+        /* top: 16%; */
     }
 }
 
@@ -874,7 +913,20 @@ a {
 
     .py_hero_sec {
         padding-bottom: 100px;
-        padding-top: 0;
+        padding-top: 100px;
+    }
+
+    .circle {
+        width: 36px;
+        height: 36px;
+        top: -4%;
+    }
+
+    .disc {
+        width: 52px;
+        height: 52px;
+        right: 20px;
+        top: 23%;
     }
 
     .prev {
