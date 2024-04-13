@@ -399,8 +399,9 @@
     opacity: 1 !important;
 }
 
-.svg_hover_fac:hover {
-    animation: svg_face_anim 2s 1;
+.svg_hover_fac:hover svg path {
+    animation: svg_face_anim 3s 1;
+    fill: var(--blue_color);
 }
 
 .svg_hover_fac:hover svg path {
@@ -436,8 +437,103 @@
     z-index: 100;
     transition: all 300ms linear;
 }
+
 .-top_100 {
     top: -100% !important;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.containers {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 168, 76, 0.6) 0%, rgba(255, 123, 13, 0.6) 100%), url('https://images.unsplash.com/photo-1446824505046-e43605ffb17f');
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+}
+
+.bird {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+    background-size: auto 100%;
+    width: 88px;
+    height: 125px;
+    /* Adjust as needed */
+    will-change: background-position;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 0;
+    left: -10vw;
+}
+
+.bird--one {
+    animation-name: fly-right-one;
+    animation-duration: 15s;
+    animation-delay: -0.5s;
+}
+
+.bird--two {
+    animation-name: fly-right-one;
+    animation-duration: 16s;
+    animation-delay: 0.5s;
+}
+
+.bird--three {
+    animation-name: fly-right-one;
+    animation-duration: 14.6s;
+    animation-delay: 9s;
+}
+
+.bird--four {
+    animation-name: fly-right-one;
+    animation-duration: 16s;
+    animation-delay: 1s;
+}
+
+@keyframes fly-right-one {
+    0% {
+        transform: scale(0.3) translateX(-10vw);
+    }
+
+    10% {
+        transform: translateY(2vh) translateX(10vw) scale(0.4);
+    }
+
+    20% {
+        transform: translateY(0vh) translateX(30vw) scale(0.5);
+    }
+
+    30% {
+        transform: translateY(4vh) translateX(50vw) scale(0.6);
+    }
+
+    40% {
+        transform: translateY(2vh) translateX(70vw) scale(0.6);
+    }
+
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.6);
+    }
+
+    60% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+    }
+
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+    }
 }
 
 /* <----------------------------------------------------------- Before $ After ----------------------------------------------------------------> */
@@ -516,7 +612,7 @@
 
 @keyframes svg_face_anim {
     to {
-        transform: rotateX(360deg);
+        background-position: 20vw;
     }
 }
 

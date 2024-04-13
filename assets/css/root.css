@@ -847,6 +847,10 @@ a {
         right: 20px;
         /* top: 16%; */
     }
+
+    .bird {
+        left: -30vw;
+    }
 }
 
 @media (max-width: 575.9px) {
