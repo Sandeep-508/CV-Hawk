@@ -724,58 +724,32 @@ a {
 /* font sizes changes media query */
 
 @media (min-width: 768px) and (max-width: 992px) {
-    .pos_line_1 {
+    .line_bottom::after {
+        content: "";
         position: absolute;
-        width: 294px;
+        bottom: -20px;
+        left: 50%;
+        width: 274px;
         height: 2px;
-        background-color: var(--light-black-clr);
-        top: 42%;
-    }
-
-    .pos_line_2 {
-        position: absolute;
-        width: 294px;
-        height: 2px;
-        background-color: var(--light-black-clr);
-        top: 50%;
-    }
-
-    .pos_line_3 {
-        position: absolute;
-        width: 294px;
-        height: 2px;
-        background-color: var(--light-black-clr);
-        top: 58%;
+        background: var(--light-black-clr);
+        transform: translateX(-50%);
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.9px) {
-    .pos_line_1 {
-        position: absolute;
-        width: 294px;
-        height: 2px;
-        background-color: var(--light-black-clr);
-        top: 35%;
-    }
-
     .mt_max_sm_30px {
         margin-top: 30px;
     }
 
-    .pos_line_2 {
+    .line_bottom::after {
+        content: "";
         position: absolute;
-        width: 294px;
+        bottom: -20px;
+        left: 50%;
+        width: 274px;
         height: 2px;
-        background-color: var(--light-black-clr);
-        top: 43%;
-    }
-
-    .pos_line_3 {
-        position: absolute;
-        width: 294px;
-        height: 2px;
-        background-color: var(--light-black-clr);
-        top: 52%;
+        background: var(--light-black-clr);
+        transform: translateX(-50%);
     }
 
     .fs-lh-big-text {
@@ -837,32 +811,24 @@ a {
 }
 
 @media (max-width: 575.9px) {
-    .pos_line_1 {
-        position: absolute;
-        width: 294px;
-        height: 2px;
-        background-color: var(--light-black-clr);
-        top: 43%;
+    .py_max_sm {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .text_wrap {
         text-wrap: nowrap !important;
     }
 
-    .pos_line_2 {
+    .line_bottom::after {
+        content: "";
         position: absolute;
-        width: 294px;
+        bottom: -20px;
+        left: 50%;
+        width: 274px;
         height: 2px;
-        background-color: var(--light-black-clr);
-        top: 52%;
-    }
-
-    .pos_line_3 {
-        position: absolute;
-        width: 294px;
-        height: 2px;
-        background-color: var(--light-black-clr);
-        top: 61%;
+        background: var(--light-black-clr);
+        transform: translateX(-50%);
     }
 
     .fs-lh-big-text {
@@ -980,5 +946,10 @@ a {
 
     .d_sm_max_none::after {
         display: none !important;
+    }
+
+    .py_max_sm_slider {
+        padding-top: 40px;
+        padding-bottom: 50px;
     }
 }

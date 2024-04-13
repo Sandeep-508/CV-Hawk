@@ -250,7 +250,7 @@
 }
 
 .py_hero_sec {
-    padding-top: 160px;
+    /* padding-top: 160px; */
     padding-bottom: 160px;
 }
 
@@ -313,6 +313,10 @@
 }
 
 .bottom_line {
+    position: relative;
+}
+
+.line_bottom {
     position: relative;
 }
 
