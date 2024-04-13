@@ -550,6 +550,11 @@ a {
         z-index: 5;
     }
 
+    .fs_lh_sub {
+        font-size: var(--fs-30);
+        line-height: var(--lh-42);
+    }
+
     .menuicon span:nth-child(1) {
         background: var(--black-color);
         width: 70%;
@@ -702,8 +707,8 @@ a {
 
 @media (max-width: 1200px) {
     .w_h_box {
-        padding-left: 170px;
-        padding-right: 170px;
+        padding-left: 200px;
+        padding-right: 200px;
     }
 }
 
@@ -731,8 +736,8 @@ a {
 
 @media (max-width: 1024px) {
     .w_h_box {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 }
 
@@ -827,11 +832,6 @@ a {
 @media (max-width: 768px) {
     .mt_max_md_45px {
         margin-top: 45px;
-    }
-
-    .fs_lh_sub {
-        font-size: var(--fs-30);
-        line-height: var(--lh-42);
     }
 
 
@@ -1007,5 +1007,10 @@ a {
     .py_max_sm_slider {
         padding-top: 40px;
         padding-bottom: 50px;
+    }
+
+    .fs_lh_changes_preloader {
+        font-size: var(--fs-30);
+        line-height: var(--lh-39);
     }
 }

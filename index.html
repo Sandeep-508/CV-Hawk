@@ -29,9 +29,9 @@
     <!-- preloader -->
 
     <section
-        class="position-fixed top-0 start-0 d-flex align-items-center justify-content-center preloader w-100 h-100">
+        class="position-fixed top-0 start-0 d-flex align-items-center justify-content-center preloader w-100 h-100 d-none">
         <div class="containers">
-            <p class="fm fw-700 fs-61 lh-71 fs_lh_changes">CV Hawk</p>
+            <p class="fm fw-700 fs-61 lh-71 fs_lh_changes_preloader">CV Hawk</p>
 
             <div class="bird-container bird-container--one">
                 <div class="bird bird--one"></div>
@@ -713,14 +713,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="prev d-flex align-items-center justify-content-center">
+                <div class="prev d-flex align-items-center justify-content-center cursor">
                     <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M9.54949 0.779599L0.343133 10.224C0.181438 10.3899 0.0909424 10.6124 0.0909424 10.8441C0.0909424 11.0757 0.181438 11.2982 0.343133 11.4641L9.54949 20.9121C9.62481 20.9894 9.71486 21.0509 9.81434 21.0929C9.91381 21.1349 10.0207 21.1565 10.1287 21.1565C10.2366 21.1565 10.3435 21.1349 10.443 21.0929C10.5425 21.0509 10.6325 20.9894 10.7078 20.9121C10.8628 20.7534 10.9495 20.5404 10.9495 20.3187C10.9495 20.0969 10.8628 19.8839 10.7078 19.7253L2.05045 10.8441L10.7078 1.96459C10.8623 1.80603 10.9487 1.59343 10.9487 1.3721C10.9487 1.15076 10.8623 0.938164 10.7078 0.779599C10.6325 0.70224 10.5425 0.640754 10.443 0.59877C10.3435 0.556786 10.2366 0.535156 10.1287 0.535156C10.0207 0.535156 9.91381 0.556786 9.81434 0.59877C9.71486 0.640754 9.62481 0.70224 9.54949 0.779599Z"
                             fill="#F36A3E" />
                     </svg>
                 </div>
-                <div class="next d-flex align-items-center justify-content-center">
+                <div class="next d-flex align-items-center justify-content-center cursor">
                     <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M1.83247 0.779599L11.0388 10.224C11.2005 10.3899 11.291 10.6124 11.291 10.8441C11.291 11.0757 11.2005 11.2982 11.0388 11.4641L1.83247 20.9121C1.75715 20.9894 1.6671 21.0509 1.56762 21.0929C1.46815 21.1349 1.36127 21.1565 1.2533 21.1565C1.14533 21.1565 1.03845 21.1349 0.938977 21.0929C0.839503 21.0509 0.749449 20.9894 0.674128 20.9121C0.519169 20.7534 0.432416 20.5404 0.432416 20.3187C0.432416 20.0969 0.519169 19.8839 0.674128 19.7253L9.33151 10.8441L0.674128 1.96459C0.5197 1.80603 0.433283 1.59343 0.433283 1.3721C0.433283 1.15076 0.5197 0.938165 0.674128 0.779599C0.749449 0.70224 0.839503 0.640754 0.938977 0.59877C1.03845 0.556786 1.14533 0.535156 1.2533 0.535156C1.36127 0.535156 1.46815 0.556786 1.56762 0.59877C1.6671 0.640754 1.75715 0.70224 1.83247 0.779599Z"
@@ -875,7 +875,7 @@
 
         <!-- subscribe -->
 
-        <section class="d-flex align-items-center justify-content-center lg_back_sec pb-3 px-4">
+        <section class="d-flex align-items-center justify-content-center lg_back_sec pb-3 px_12px">
             <div class="w_h_box d-flex align-items-center justify-content-center flex-column">
                 <p class="fm fw-500 fs-40 lh-46 text-white text-center max_W_Lorem m-0 fs_lh_sub">Your Path to Success
                     Starts
@@ -1035,6 +1035,12 @@
         <p class="text-center fm fw-500 fs-16 lh-24 text-white py_20px m-0 opacity-90 cursor">Copyright@CVhawk2023</p>
     </footer>
 
+
+    <section class="scroll_top position-fixed z-3">
+        <div class="scroll_box shadow">
+            <img src="./assets/images/svg/scroll_top_icon.svg" alt="scroll to top icon" class="w-100 h-100">
+        </div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
