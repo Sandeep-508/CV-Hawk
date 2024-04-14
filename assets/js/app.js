@@ -150,3 +150,10 @@ window.addEventListener("scroll", () => {
         });
     });
 });
+
+// AOS Animation
+
+AOS.init({
+    once: true,
+    duration: 3000,
+});

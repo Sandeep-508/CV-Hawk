@@ -1013,4 +1013,11 @@ a {
         font-size: var(--fs-30);
         line-height: var(--lh-39);
     }
+
+    ..scroll_top,
+    .scroll_box {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
 }
