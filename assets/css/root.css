@@ -650,6 +650,11 @@ a {
         padding-top: 60px;
         padding-bottom: 46px;
     }
+
+    .px_max_media {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -764,6 +769,10 @@ a {
         padding-top: 102px;
         padding-bottom: 155px;
     }
+
+    .pe_60px {
+        padding-right: 60px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.9px) {
@@ -780,6 +789,10 @@ a {
         height: 2px;
         background: var(--light-black-clr);
         transform: translateX(-50%);
+    }
+
+    .pe_60px {
+        padding-right: 60px;
     }
 
     .fs-lh-big-text {
@@ -862,6 +875,11 @@ a {
     .py_max_sm {
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+
+    .px_max_media {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .text_wrap {
