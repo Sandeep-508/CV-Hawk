@@ -155,5 +155,5 @@ window.addEventListener("scroll", () => {
 
 AOS.init({
     once: true,
-    duration: 3000,
+    duration: 1200,
 });

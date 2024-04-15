@@ -691,6 +691,10 @@
     border-radius: 6px;
 }
 
+.slick-current .slick-item p {
+    color: var(--primary-color) !important;
+}
+
 .slick-current div .slick-item div {
     border: 1px solid var(--primary-color);
 }
