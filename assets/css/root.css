@@ -645,6 +645,11 @@ a {
         width: 36px;
         height: 36px;
     }
+
+    .py_max_md_slider {
+        padding-top: 60px;
+        padding-bottom: 46px;
+    }
 }
 
 @media (min-width: 992px) {
