@@ -1006,7 +1006,7 @@ a {
 
     .py_max_sm_slider {
         padding-top: 40px;
-        padding-bottom: 50px;
+        padding-bottom: 70px;
     }
 
     .fs_lh_changes_preloader {
@@ -1014,10 +1014,14 @@ a {
         line-height: var(--lh-39);
     }
 
-    ..scroll_top,
+    .scroll_top,
     .scroll_box {
         width: 30px;
         height: 30px;
         border-radius: 50%;
+    }
+
+    .mt_40px_min_sm {
+        margin-top: 40px;
     }
 }
